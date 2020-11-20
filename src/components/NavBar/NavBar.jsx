@@ -116,7 +116,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
     </Menu>
   );
 
@@ -163,18 +163,10 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static" style={{background: 'rgb(1, 68, 33, .85)'}}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Trails ATX
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -191,13 +183,13 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
+            <IconButton aria-label="show 1 new mails" color="inherit">
+              <Badge /* badgeContent={1} */ color="secondary">
                 <MailIcon />
               </Badge>
             </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
+            <IconButton aria-label="show 5 new notifications" color="inherit">
+              <Badge /* badgeContent={5} */ color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
@@ -230,5 +222,3 @@ export default function PrimarySearchAppBar() {
     </div>
   );
 }
-
-export default NavBar;

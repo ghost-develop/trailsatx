@@ -3,7 +3,21 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 10% 25% 25% 25% 15%;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+
+    /* align-items: center; */
     justify-content: center;
+}
+
+.dashContainer {
+    
 }
