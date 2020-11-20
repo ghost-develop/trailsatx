@@ -1,28 +1,17 @@
 import React from 'react';
-import './App.css';
-import ButtonAppBar from './components/NavBar';
-import Dashboard from './components/Dashboard';
+import styles from './App.module.css';
+import { NavBar } from './components';
 
 
-
-
-
-
-
-
-
-
-
-function App() {
-
-
-  return (
-    <div className="App">
-      <ButtonAppBar />
-      <Dashboard />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        {/* <Dashboard /> */}
+        <NavBar />
+      </div>
+    )
+  }
 }
-
 
 export default App;
