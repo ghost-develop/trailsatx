@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: grey;
 }
 
 .navContainer {
@@ -7,13 +7,14 @@ body {
     flex-direction: row;
 }
 
-.dashContainer {
+/* .dashContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     background-color: grey;
-}
+} */
 
-.profile {
-    grid-column-start: 3;
-}
+
+
+
 

@@ -7,12 +7,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className={styles.navContainer}>
-          <NavBar />
-        </div>
-        <div className={styles.dashContainer}>
-          <Cards />
-        </div>
+        <NavBar />
+        <Cards />
       </div>
     )
   }
