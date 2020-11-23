@@ -29,16 +29,13 @@ export default function Cards() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-      <div>
+      <div className={styles.container}>
         <Card className={styles.profile}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom>
                 Profile
                 </Typography>
-                <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
+                <Typography color="textSecondary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -54,13 +51,10 @@ export default function Cards() {
 
         <Card className={styles.history}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom>
                 History
                 </Typography>
-                <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
+                <Typography color="textSecondary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -76,13 +70,10 @@ export default function Cards() {
 
         <Card className={styles.calendar}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom>
                 Calendar
                 </Typography>
-                <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
+                <Typography color="textSecondary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
