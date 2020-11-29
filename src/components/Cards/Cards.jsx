@@ -30,12 +30,13 @@ export default function Cards() {
 
   return (
       <div className={styles.container}>
-        <Card className={styles.profile}>
+
+        <Card className={styles.profile} >
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textPrimary" gutterBottom>
                 Profile
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography color="textPrimary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -49,12 +50,12 @@ export default function Cards() {
             </CardActions>
         </ Card>
 
-        <Card className={styles.history}>
+        <Card className={styles.weather}>
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                History
+                <Typography color="textPrimary" gutterBottom>
+                Weather Widget
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography color="textPrimary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -70,10 +71,10 @@ export default function Cards() {
 
         <Card className={styles.calendar}>
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textPrimary" gutterBottom>
                 Calendar
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography color="textPrimary">
                 adjective
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -86,6 +87,25 @@ export default function Cards() {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
+
+        <Card className={styles.news}>
+            <CardContent>
+                <Typography color="textPrimary" gutterBottom>
+                Pinkbike Reddit news
+                </Typography>
+                <Typography color="textPrimary">
+                Pinkbike
+                </Typography>
+                <Typography variant="body2" component="p">
+                well meaning and kindly.
+                <br />
+                {'"a benevolent smile"'}
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <Button size="small">Learn More</Button>
+            </CardActions>
+        </ Card>
     </div>
   );
 }

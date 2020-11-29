@@ -1,25 +1,34 @@
-
-
 .container {
     display: grid;
     width: 90vw;
     height: 90vh;
     position: absolute;
-    grid-template-columns: 1fr 15% 10% 1fr 20% 10% 15% 1fr;
-    grid-template-rows: 50px 20% 50px 25% 50px 25% 20% 50px;
+    grid-template-columns: 1fr 15% 20% .5fr 20% 25% 1fr;
+    grid-template-rows: 50px 20% 5% 5% 10% 25% 10% 25% 20% 50px;
+    
 }
 
 .profile {
-    grid-row-start: 2;
+    grid-row: 2 / 4;
     grid-column: 2 / 4;
 }
 
-.history {
-    grid-row-start: 4;
+.weather {
+    grid-row: 5 / 8;
     grid-column: 2 / 4;
 }
 
 .calendar {
-    grid-row: 4 / 6;
+    grid-row: 5 / 8;
     grid-column: 5 / 7;
+}
+
+.news {
+    grid-row: 2 / 4;
+    grid-column: 5 / 8;
+}
+
+.container > div { 
+    background-color: rgba(155, 155, 155, 0.7); 
+    
 }
