@@ -1,18 +1,20 @@
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: grey;
+    background-image: url('./assets/julian-hochgesang-D-a6NgKizOE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .navContainer {
     display: grid;
     flex-direction: row;
 }
 
-/* .dashContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    background-color: grey;
-} */
 
 
 
