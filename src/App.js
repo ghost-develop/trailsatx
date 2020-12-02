@@ -1,6 +1,9 @@
 import React from 'react';
-import styles from './App.module.css';
-import { NavBar, Dashboard, Cards } from './components';
+// import styles from './App.module.css';
+import { NavBar, Cards } from './components';
+import { fetchWeatherData } from '../src/api/index';
+
+fetchWeatherData();
 
 
 class App extends React.Component {
