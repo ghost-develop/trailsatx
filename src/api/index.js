@@ -17,7 +17,7 @@ async function getLocation() {
     async function success(position) {
         latAndLong.latitude = position.coords.latitude;
         latAndLong.longitude = position.coords.longitude;
-        console.log(`api.openweathermap.org/data/2.5/weather?lat=${latAndLong.latitude}&lon=${latAndLong.longitude}&appid=${api_key}`)
+        console.log(`api.openweathermap.org/data/2.5/weather?lat=${latAndLong.latitude}&lon=${latAndLong.longitude}&appid=${api_key}&units=imperial`)
     }
     async function error() {
         console.log("Cannot get location")
@@ -28,7 +28,7 @@ async function getLocation() {
 export const fetchWeatherData = async () => {  
     try {
         await getLocation();
-        const { data } = await axios.get(`api.openweathermap.org/data/2.5/weather?lat=${latAndLong.latitude}&lon=${latAndLong.longitude}&appid=${api_key}`);
+        const { data } = await axios.get(`api.openweathermap.org/data/2.5/weather?lat=${latAndLong.latitude}&lon=${latAndLong.longitude}&appid=${api_key}&units=imperial`);
         console.log(data);
     } catch (error) {
         console.log(error);
